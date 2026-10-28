@@ -1,0 +1,1 @@
+export async function copyChecked(text,{write,read}){try{await write(text);if(read&&await read()===text)return 'verified';}catch{}return 'manual';}

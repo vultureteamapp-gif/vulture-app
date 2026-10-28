@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';import {pathToFileURL} from 'node:url';import {here,hash,read} from "./binding.mjs";import {verifyPrepared,readApproval,inspectState} from "./control.mjs";
+export {here,hash,read};export const root=here;
+export async function preflight(){const p=await verifyPrepared(root),prepared=p.prepared,{a,approvalHash}=readApproval(prepared.approvalFile),state=inspectState({approvalFile:prepared.approvalFile});if(!state.ready||fs.existsSync(path.join(here,'operator-dispatch-intent.lock')))throw Error('TRIAL_ALREADY_SPENT_OR_UNCERTAIN_NO_RETRY');return {prepared,p,a,approvalHash};}
+if(process.argv[1]&&pathToFileURL(path.resolve(process.argv[1])).href===import.meta.url){try{await preflight();console.log('PASS_006_EXACT_SOURCE_BUILD_APPROVAL_UNSPENT_NO_KEY_NO_CALL');}catch(e){console.error('BLOCKED_006_NO_VALID_APPROVAL_OR_UNSPENT_BINDING_NO_KEY_NO_CALL '+(e.code??e.message));process.exitCode=1;}}

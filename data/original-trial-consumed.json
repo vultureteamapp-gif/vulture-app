@@ -1,0 +1,8 @@
+{
+  "originalTrialId": "document-meaning-payment-006",
+  "requestSha256": "b719b7bedca24f00a4fd1ff780854907cd38602652ce747d89f94713fb81aec6",
+  "originalExecutionBindingSha256": "47372a017d292d08fa79e9363552ce398e081e2774b93a0292b152193071cf93",
+  "originalSpent": true,
+  "newApprovalIncluded": false,
+  "originalPrivateLedgerCopied": false
+}

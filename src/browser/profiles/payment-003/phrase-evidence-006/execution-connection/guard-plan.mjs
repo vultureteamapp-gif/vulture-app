@@ -1,0 +1,4 @@
+import {freshAnalysis as originalFresh,guardPlan as originalGuard} from "./../guard-plan.mjs";
+export function freshAnalysis(doc,a){const fresh=originalFresh(doc,a);return {...fresh,executionProvenance:a.executionProvenance?structuredClone(a.executionProvenance):null};}
+export function guardPlan(plan){const guarded=originalGuard(plan),p=plan.analysis.executionProvenance;if(!p)throw Error('PHRASE_RESPONSE_PROVENANCE_REQUIRED');return {...guarded,reviewProvenance:{...guarded.reviewProvenance,...p,actualModelVerified:p.actualProviderResponse&&p.modelWholeResponsePass,completion:'UNCONFIRMED'}};}
+export function recordCompletion(result,plan){const p=plan.reviewProvenance;result.receipt.reviewProvenance={...p,completion:p.actualProviderResponse?'HUMAN_CONFIRMED_REAL_RESPONSE':p.simulation?'HUMAN_CONFIRMED_SIMULATION':'HUMAN_CONFIRMED_OFFLINE',humanFields:plan.human.map(h=>h.field)};return result;}

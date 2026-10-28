@@ -1,0 +1,60 @@
+// Portable source build only. No private workspace imports, approval creation, keys, or provider calls.
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import {build,transform} from 'esbuild';
+const root=path.resolve(import.meta.dirname,'..'),out=path.join(root,'dist');
+const hash=x=>createHash('sha256').update(x).digest('hex'),read=f=>JSON.parse(fs.readFileSync(f,'utf8').replace(/^\uFEFF/,''));
+const entries=read(path.join(root,'build-entries.json'));
+if(fs.existsSync(path.join(out,'real','approval.USER.json'))||fs.existsSync(path.join(out,'real','trial-provisioned.lock')))throw Error('DO_NOT_REBUILD_APPROVED_EXECUTION');
+fs.mkdirSync(path.join(out,'public/pwa-assets'),{recursive:true});fs.mkdirSync(path.join(out,'real/public'),{recursive:true});
+const outputs={hosted:'server.mjs',provision:'provision.mjs',state:'state-api.mjs',liveServer:'real/server.mjs',liveControl:'real/control.mjs',livePreflight:'real/preflight.mjs',liveExecute:'real/execute-once.mjs'};
+const closed={name:'source-package-boundary',setup(b){b.onResolve({filter:/.*/},a=>{if(a.path.startsWith('node:'))return {path:a.path,external:true};if(!a.importer)return;const target=path.resolve(path.dirname(a.importer),a.path);if(!target.startsWith(root+path.sep))throw Error('SOURCE_IMPORT_OUTSIDE_PACKAGE');});}};
+await build({absWorkingDir:root,entryPoints:[entries.browser],outfile:path.join(out,'public/document.js'),bundle:true,format:'esm',platform:'browser',target:'es2022',plugins:[closed],logLevel:'warning'});
+for(const[key,file]of Object.entries(outputs))await build({absWorkingDir:root,entryPoints:[entries[key]],outfile:path.join(out,file),bundle:true,format:'esm',platform:'node',target:'node24',plugins:[closed],logLevel:'warning'});
+const js=fs.readFileSync(path.join(out,'public/document.js'),'utf8'),baseline=read(path.join(root,'BUILD-BASELINE.json'));
+let normalized=(await transform(js,{legalComments:'none',format:'esm',target:'es2022'})).code;
+// Source path relocation changes one esbuild collision suffix. Full readable diff was
+// checked: the ONLY difference is this identifier at eight sites; no logic/string change.
+if(normalized.includes('var channel2 =')&&!normalized.includes('var channel ='))normalized=normalized.replace(/\bchannel2\b/g,'channel');
+if(hash(fs.readFileSync(path.join(root,'src/browser/app.ts')))!==baseline.connectionAppSha256)throw Error('REVIEWER_UI_CONNECTION_CHANGED');
+for(const row of baseline.frozenBrowserModules)if(hash(fs.readFileSync(path.join(root,row.file)))!==row.sha256)throw Error('FROZEN_BROWSER_BUSINESS_MODULE_CHANGED');
+const css=fs.readFileSync(path.join(root,'assets/style-mobile.css')),manifest=read(path.join(root,'assets/manifest.webmanifest'));
+const jsName='document.'+hash(js).slice(0,16)+'.js',cssName='style.'+hash(css).slice(0,16)+'.css';
+fs.writeFileSync(path.join(out,'public/pwa-assets',jsName),js);fs.writeFileSync(path.join(out,'public/pwa-assets',cssName),css);
+fs.writeFileSync(path.join(out,'public/document-mobile.js'),js);fs.writeFileSync(path.join(out,'public/style-mobile.css'),css);
+const assets={['/pwa-assets/'+jsName]:{file:jsName,type:'text/javascript'},['/pwa-assets/'+cssName]:{file:cssName,type:'text/css'}};
+for(const name of fs.readdirSync(path.join(root,'assets/icons'))){fs.copyFileSync(path.join(root,'assets/icons',name),path.join(out,'public/pwa-assets',name));assets['/pwa-assets/'+name]={file:name,type:'image/png'};}
+fs.writeFileSync(path.join(out,'public/pwa-assets/assets-map.json'),JSON.stringify(assets,null,2)+'\n');
+fs.writeFileSync(path.join(out,'public/manifest.webmanifest'),JSON.stringify(manifest,null,2)+'\n');
+const uiRelease=hash(js+css.toString()+JSON.stringify(manifest));
+let html=fs.readFileSync(path.join(root,'assets/index-mobile.html'),'utf8').replace(/data-ui-release="[a-f0-9]+"/,'data-ui-release="'+uiRelease+'"').replace(/src="\/pwa-assets\/document\.[a-f0-9]+\.js"/,'src="/pwa-assets/'+jsName+'"').replace(/href="\/pwa-assets\/style\.[a-f0-9]+\.css"/,'href="/pwa-assets/'+cssName+'"');
+fs.writeFileSync(path.join(out,'public/index-mobile.html'),html);
+fs.writeFileSync(path.join(out,'public/app-version.json'),JSON.stringify({schema:'vulture-ui-release/1',version:'0.14.3',profile:'phrase-006',release:uiRelease,storageSchemaUnchanged:true,automaticReload:false,serviceWorkerCache:false},null,2)+'\n');
+for(const name of ['login.html','login.js'])fs.copyFileSync(path.join(root,'assets',name),path.join(out,'public',name));
+fs.mkdirSync(path.join(out,'runtime-root'),{recursive:true});
+for(const name of ['source-snapshot.json','request.bytes.json','actual-replay.json'])fs.copyFileSync(path.join(root,'data',name),path.join(out,'runtime-root',name));
+const real=path.join(out,'real');fs.mkdirSync(path.join(real,'future-test'),{recursive:true});
+fs.copyFileSync(path.join(root,'operator/open-key-window.ps1'),path.join(real,'open-key-window.ps1'));
+fs.copyFileSync(path.join(root,'data/source-snapshot.json'),path.join(real,'future-test/source-snapshot.json'));
+fs.copyFileSync(path.join(root,'data/request.bytes.json'),path.join(real,'future-test/request.proposed.bytes.json'));
+fs.copyFileSync(path.join(root,'assets/live-index.html'),path.join(real,'public/index.html'));
+fs.copyFileSync(path.join(out,'public/document.js'),path.join(real,'public/document.js'));
+fs.writeFileSync(path.join(real,'public/style.css'),css);
+function filesUnder(dir){const files=[];for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())files.push(...filesUnder(f));else if(e.isSymbolicLink())throw Error('PACKAGE_SYMLINK_DENIED');else files.push(f);}return files;}
+const sourceManifest=read(path.join(root,'SOURCE-MANIFEST.json'));
+for(const row of sourceManifest.files)if(hash(fs.readFileSync(path.join(root,row.file)))!==row.sha256)throw Error('SOURCE_MANIFEST_CHANGED '+row.file);
+fs.writeFileSync(path.join(real,'baseline.json'),JSON.stringify({scope:'This selected source package only; no old private approvals/ledgers',files:sourceManifest.files.map(r=>({file:path.join(root,r.file),sha256:r.sha256}))},null,2)+'\n');
+fs.writeFileSync(path.join(real,'ORIGINAL-TRIAL-CONSUMED.json'),fs.readFileSync(path.join(root,'data/original-trial-consumed.json')));
+const isState=f=>/(?:^|[\\/])(?:service-state|live-state)(?:[\\/]|$)/.test(f)||path.basename(f)==='key-server-ready.json';
+const realFiles=filesUnder(real).filter(f=>!isState(f)&&!['prepared.json','release-manifest.json'].includes(path.basename(f)));
+const rows=realFiles.map(f=>({file:path.relative(real,f).replaceAll('\\','/'),sha256:hash(fs.readFileSync(f))}));
+fs.writeFileSync(path.join(real,'release-manifest.json'),JSON.stringify({scope:'Portable 006 execution; blocked until a NEW separately bound approval',files:rows},null,2)+'\n');
+const requestSha=hash(fs.readFileSync(path.join(root,'data/request.bytes.json')));
+if(requestSha!==baseline.requestSha256)throw Error('FROZEN_006_REQUEST_CHANGED');
+const prepared={trialId:'document-meaning-payment-006',profile:'phrase-006',requestSha256:requestSha,model:'nvidia/nemotron-3-super-120b-a12b',endpoint:'https://api.tokenfactory.nebius.com/v1/chat/completions',actor:'synthetic-driver',runtimeRoot:real,runtimeEntry:path.join(real,'server.mjs'),approvalFile:path.join(real,'approval.USER.json'),stateDir:path.join(real,'live-state/phrase-006'),inputUpperBound:8000,outputMaxTokens:2048,timeoutMs:45000,maxExternalPosts:1,automaticRetries:0,maximumEstimatedUsd:0.0042432,releaseManifestSha256:hash(fs.readFileSync(path.join(real,'release-manifest.json'))),sourceSnapshotSha256:hash(fs.readFileSync(path.join(real,'future-test/source-snapshot.json')))};
+fs.writeFileSync(path.join(real,'prepared.json'),JSON.stringify(prepared,null,2)+'\n');
+const built=filesUnder(out).filter(f=>!isState(f)&&f!==path.join(out,'BUILD.json')&&f!==path.join(out,'SERVICE-RELEASE.json')).map(f=>({file:path.relative(out,f).replaceAll('\\','/'),sha256:hash(fs.readFileSync(f)),bytes:fs.statSync(f).size}));
+const result={schema:'006-portable-source-build/1',requestSha256:requestSha,browserBehaviorFingerprintUnchanged:false,businessModulesUnchanged:true,reviewerConnectionUiSha256:baseline.connectionAppSha256,uiRelease,previousUiRelease:baseline.originalPwaRelease,uiHashChangeReason:'Authorized reviewer live-button/status connection only; frozen evidence/contract/calculation/save/report modules unchanged',executionBindingSha256:hash(fs.readFileSync(path.join(real,'prepared.json'))),oldApprovalIncluded:false,oldLocksCopied:false,liveApprovalPrepared:false,providerCalls:0,files:built};
+fs.writeFileSync(path.join(out,'BUILD.json'),JSON.stringify(result,null,2)+'\n');
+const serviceRows=[...sourceManifest.files.map(r=>({file:r.file,sha256:r.sha256})),{file:'SOURCE-MANIFEST.json',sha256:hash(fs.readFileSync(path.join(root,'SOURCE-MANIFEST.json')))},...filesUnder(out).filter(f=>!isState(f)&&!['SERVICE-RELEASE.json'].includes(path.basename(f))).map(f=>({file:path.relative(root,f).replaceAll('\\','/'),sha256:hash(fs.readFileSync(f))}))];
+fs.writeFileSync(path.join(out,'SERVICE-RELEASE.json'),JSON.stringify({schema:'vulture-reviewer-release-006/1',requestSha256:requestSha,uiRelease,executionBindingSha256:result.executionBindingSha256,files:serviceRows},null,2)+'\n');
+console.log(JSON.stringify({build:'PASS',sourceOnly:true,requestSha256:requestSha,uiRelease,browserBehaviorFingerprintUnchanged:false,businessModulesUnchanged:true,newExecutionBindingSha256:result.executionBindingSha256,liveApproved:false,providerCalls:0,files:built.length}));

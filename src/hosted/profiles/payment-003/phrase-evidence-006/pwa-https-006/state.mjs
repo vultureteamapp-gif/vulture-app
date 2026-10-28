@@ -1,0 +1,12 @@
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+import {provisionGuard,verifyPersistent} from "./../../../../vendor/base/server/persistent-guard.mjs";import {PIN,reviewerState,provisionReviewerPeriod} from "./runtime.mjs";
+export const seal=createHash('sha256').update('phrase-006-pwa-offline-ledger-no-live-authority').digest('hex');
+export function plainPath(file,kind='directory'){let cursor=path.resolve(file);for(;;){const s=fs.lstatSync(cursor);if(s.isSymbolicLink()||cursor===path.resolve(file)&&(kind==='directory'?!s.isDirectory():!s.isFile()))throw Error('PWA_STATE_PATH_INVALID');const p=path.dirname(cursor);if(p===cursor)break;cursor=p;}return file;}
+export function assertMount(mount='/var/data'){if(process.platform!=='linux'||!fs.readFileSync('/proc/self/mountinfo','utf8').split('\n').some(l=>l.split(' ')[4]===mount))throw Error('PERSISTENT_DISK_MOUNT_REQUIRED');plainPath(mount);}
+export function statePath(root,relative){const p=path.resolve(root,relative);if(!p.startsWith(path.resolve(root)+path.sep))throw Error('STATE_PATH_ESCAPE');return p;}
+export function provisionState(root){if(!path.isAbsolute(root)||fs.existsSync(root))throw Error('NEW_PWA_STATE_REQUIRED');plainPath(path.dirname(root));fs.mkdirSync(root);fs.mkdirSync(statePath(root,'auth'));provisionGuard(statePath(root,'offline-ledger'),seal);fs.mkdirSync(statePath(root,'offline-ledger/records'));fs.writeFileSync(statePath(root,'hosted-state.json'),JSON.stringify({schema:'phrase-006-pwa-hosted/1',requestSha256:PIN,liveDefault:false}),{flag:'wx'});return verifyState(root);}
+export function verifyState(root){plainPath(root);const v=JSON.parse(fs.readFileSync(plainPath(statePath(root,'hosted-state.json'),'file')));if(v.schema!=='phrase-006-pwa-hosted/1'||v.requestSha256!==PIN||v.liveDefault!==false)throw Error('PWA_STATE_BINDING_INVALID');plainPath(statePath(root,'auth'));verifyPersistent(statePath(root,'offline-ledger'),seal);plainPath(statePath(root,'offline-ledger/records'));return v;}
+export function trialState(root){return reviewerState(root);}
+export function provisionApprovedTrial(root,runtimeRoot,{origin=process.env.VULTURE_PUBLIC_ORIGIN,simulation=false}={}){verifyState(root);return provisionReviewerPeriod({stateRoot:root,packageRoot:path.resolve(runtimeRoot,'../..'),origin,simulation});}
+
+export {REVIEWER_POLICY,readReviewerApproval,verifyServiceRelease,reviewerState,provisionReviewerPeriod,liveController,readReviewerReplay} from './runtime.mjs';

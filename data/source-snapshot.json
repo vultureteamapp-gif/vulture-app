@@ -1,0 +1,240 @@
+{
+  "documents": [
+    {
+      "kind": "load",
+      "syntheticOnly": true,
+      "text": "SYNTHETIC HAUL NOTE\nDate: 2027-04-18\nVehicle: LYRA-27\nFrom: Cedar Ridge Yard\nTo: South Harbor Gate\nFare: KRW 465000\nStatus: completed\nReference: LYR-APR-31"
+    },
+    {
+      "kind": "payment",
+      "syntheticOnly": true,
+      "text": "SYNTHETIC PAYMENT NOTE\nDate: 2027-04-18\nVehicle: LYRA-27\nMerchant: Juniper Fuel House\nAmount: KRW 73500\nTotal: KRW 75000\nLiters: 42\nUnit price: KRW 1750\nPayment status: approved\nReference: PAY-APR-45"
+    }
+  ],
+  "sources": [
+    {
+      "id": "DOC1",
+      "kind": "load",
+      "sourceSignature": "{\"kind\":\"load\",\"syntheticOnly\":true,\"text\":\"SYNTHETIC HAUL NOTE\\nDate: 2027-04-18\\nVehicle: LYRA-27\\nFrom: Cedar Ridge Yard\\nTo: South Harbor Gate\\nFare: KRW 465000\\nStatus: completed\\nReference: LYR-APR-31\"}",
+      "units": [
+        {
+          "ref": "r1",
+          "text": "SYNTHETIC HAUL NOTE",
+          "start": 0,
+          "end": 19,
+          "label": null,
+          "sha256": "57c93abeb6cf3c29eaf14ec98b2f8212521f3c82312e7c125ec343771a1093a3"
+        },
+        {
+          "ref": "r2",
+          "text": "Date: 2027-04-18",
+          "start": 20,
+          "end": 36,
+          "label": {
+            "field": "date",
+            "value": "2027-04-18",
+            "valueOffset": 6
+          },
+          "sha256": "9c59d7de79d75f1277006bfba5e4abc6715ae7e94d0daa968599e2fb03c70d53"
+        },
+        {
+          "ref": "r3",
+          "text": "Vehicle: LYRA-27",
+          "start": 37,
+          "end": 53,
+          "label": {
+            "field": "vehicle",
+            "value": "LYRA-27",
+            "valueOffset": 9
+          },
+          "sha256": "3c617a78e2bbbfd28f2cdf2fbcb04aadc5fc03724cf3b70791c9d764286b6e2c"
+        },
+        {
+          "ref": "r4",
+          "text": "From: Cedar Ridge Yard",
+          "start": 54,
+          "end": 76,
+          "label": {
+            "field": "origin",
+            "value": "Cedar Ridge Yard",
+            "valueOffset": 6
+          },
+          "sha256": "41fc40477640cb22fa2f1c70e09125da61ff52a3de9905cd6225e415766e1ba7"
+        },
+        {
+          "ref": "r5",
+          "text": "To: South Harbor Gate",
+          "start": 77,
+          "end": 98,
+          "label": {
+            "field": "destination",
+            "value": "South Harbor Gate",
+            "valueOffset": 4
+          },
+          "sha256": "0749c8b8566f01bcb6cfb7eee6091c9f6e6091dc78ca9af7335fa9f03dc7ccf3"
+        },
+        {
+          "ref": "r6",
+          "text": "Fare: KRW 465000",
+          "start": 99,
+          "end": 115,
+          "label": {
+            "field": "amount",
+            "value": "KRW 465000",
+            "valueOffset": 6
+          },
+          "sha256": "3e45b888a1abc14c6afabeefe51bd69233207554b2fed2a75caae955375d1124"
+        },
+        {
+          "ref": "r7",
+          "text": "Status: completed",
+          "start": 116,
+          "end": 133,
+          "label": {
+            "field": "status",
+            "value": "completed",
+            "valueOffset": 8
+          },
+          "sha256": "3463c4ea8f949bf3c27ceadb93df8a9c97c6ed70b784340085f1266b4bcb26e8"
+        },
+        {
+          "ref": "r8",
+          "text": "Reference: LYR-APR-31",
+          "start": 134,
+          "end": 155,
+          "label": {
+            "field": "reference",
+            "value": "LYR-APR-31",
+            "valueOffset": 11
+          },
+          "sha256": "d759255253be43bfeb4a18ac4c91b8453537c164e4401d44fd50febaf971957d"
+        }
+      ],
+      "sourceSha256": "1194ba1d624030c5ae11e8fad92797b2d076fed842511393e5593d840a5ab37f"
+    },
+    {
+      "id": "DOC2",
+      "kind": "payment",
+      "sourceSignature": "{\"kind\":\"payment\",\"syntheticOnly\":true,\"text\":\"SYNTHETIC PAYMENT NOTE\\nDate: 2027-04-18\\nVehicle: LYRA-27\\nMerchant: Juniper Fuel House\\nAmount: KRW 73500\\nTotal: KRW 75000\\nLiters: 42\\nUnit price: KRW 1750\\nPayment status: approved\\nReference: PAY-APR-45\"}",
+      "units": [
+        {
+          "ref": "r1",
+          "text": "SYNTHETIC PAYMENT NOTE",
+          "start": 0,
+          "end": 22,
+          "label": null,
+          "sha256": "05189dc5856165a72aa3fe35d28be4c97855e75100641cbcb6f70b96bb6e05a1"
+        },
+        {
+          "ref": "r2",
+          "text": "Date: 2027-04-18",
+          "start": 23,
+          "end": 39,
+          "label": {
+            "field": "date",
+            "value": "2027-04-18",
+            "valueOffset": 6
+          },
+          "sha256": "8595b1fa06cbe07c7087290f8a3abb5f9e21057a948d62c09cbd4683f9c8e2e1"
+        },
+        {
+          "ref": "r3",
+          "text": "Vehicle: LYRA-27",
+          "start": 40,
+          "end": 56,
+          "label": {
+            "field": "vehicle",
+            "value": "LYRA-27",
+            "valueOffset": 9
+          },
+          "sha256": "9aa79b98af9339008593c0c1fc2470bc37e5775fcb4c52c49bd3cf981276ce61"
+        },
+        {
+          "ref": "r4",
+          "text": "Merchant: Juniper Fuel House",
+          "start": 57,
+          "end": 85,
+          "label": {
+            "field": "merchant",
+            "value": "Juniper Fuel House",
+            "valueOffset": 10
+          },
+          "sha256": "4c97303fcfb8535286e5fa568d82834064c6502c2d3444ce307954f04f1e6001"
+        },
+        {
+          "ref": "r5",
+          "text": "Amount: KRW 73500",
+          "start": 86,
+          "end": 103,
+          "label": {
+            "field": "amount",
+            "value": "KRW 73500",
+            "valueOffset": 8
+          },
+          "sha256": "3d11b0ba99554a3bfb703664f482f08b43229c48bf4f13013bf5f6481a4b202a"
+        },
+        {
+          "ref": "r6",
+          "text": "Total: KRW 75000",
+          "start": 104,
+          "end": 120,
+          "label": {
+            "field": "amount",
+            "value": "KRW 75000",
+            "valueOffset": 7
+          },
+          "sha256": "edafbe7671ebb85a56dceea4d714cec54b5f9bf69559fbf40520b9161eecf70e"
+        },
+        {
+          "ref": "r7",
+          "text": "Liters: 42",
+          "start": 121,
+          "end": 131,
+          "label": {
+            "field": "liters",
+            "value": "42",
+            "valueOffset": 8
+          },
+          "sha256": "6dff4f959ece8956b9e767d9cdcd474c2d4eae15d35af95543d04f01523ffe9a"
+        },
+        {
+          "ref": "r8",
+          "text": "Unit price: KRW 1750",
+          "start": 132,
+          "end": 152,
+          "label": {
+            "field": "unitPrice",
+            "value": "KRW 1750",
+            "valueOffset": 12
+          },
+          "sha256": "56b6885d055e3be973fcf534942b1c038f3c9eae03db3e6e6138234852e784db"
+        },
+        {
+          "ref": "r9",
+          "text": "Payment status: approved",
+          "start": 153,
+          "end": 177,
+          "label": {
+            "field": "paymentState",
+            "value": "approved",
+            "valueOffset": 16
+          },
+          "sha256": "c995f0057f435f1e310d1b21d680c54757880eff6f87dab7f507caab193c6387"
+        },
+        {
+          "ref": "r10",
+          "text": "Reference: PAY-APR-45",
+          "start": 178,
+          "end": 199,
+          "label": {
+            "field": "reference",
+            "value": "PAY-APR-45",
+            "valueOffset": 11
+          },
+          "sha256": "00b00c6dc6299a28ec800adebba86678f338ab229b3bbd0c3458b26b1eeb90ce"
+        }
+      ],
+      "sourceSha256": "0e8364ff19871ec5fb558596692ed0f23c3a4d5fb71addea0b24941570de622b"
+    }
+  ]
+}

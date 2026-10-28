@@ -1,0 +1,145 @@
+{
+  "requestSha256": "b719b7bedca24f00a4fd1ff780854907cd38602652ce747d89f94713fb81aec6",
+  "originalPwaRelease": "a9d1b7b40c674b86db92685e4f2dba9430db63a7d914ff83c1884991bd8be134",
+  "browserNormalizedSha256": "bb49d4d1db77530011b170122b9928feb0481f11246218a7b9ba0012c60e4ebc",
+  "normalization": "Original whole-browser hash is historical. Only app.ts connection/availability controls changed; frozen browser business modules and fixed request must retain original hashes.",
+  "originalBrowserNormalizedSha256": "bb49d4d1db77530011b170122b9928feb0481f11246218a7b9ba0012c60e4ebc",
+  "connectionAppSha256": "2c2e2585c1ea019dac6b3c1595b3390bed33bc238e59552cbcd723531f736165",
+  "frozenBrowserModules": [
+    {
+      "file": "src/browser/copy-report.mjs",
+      "sha256": "92adb598a681510bdc5aafde4455ef8f968acbfff8be81859b1750d211212f70",
+      "bytes": 147
+    },
+    {
+      "file": "src/browser/core.mjs",
+      "sha256": "1ac4638c228d63daef3a78d1ed650e0506bf629d2f5184af88c2715744baa5f9",
+      "bytes": 13354
+    },
+    {
+      "file": "src/browser/fixed-trial-loader.mjs",
+      "sha256": "f01792d0c1102a6ab2d049fd89e47a18bed32cc8a713d141f2b5207887fe96e7",
+      "bytes": 2697
+    },
+    {
+      "file": "src/browser/model-contract.mjs",
+      "sha256": "39b712fd44767a1981226c923516179b8d1ae1ef5571a7b63d5a0afa19733988",
+      "bytes": 7192
+    },
+    {
+      "file": "src/browser/payment-inbox.mjs",
+      "sha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "bytes": 7648
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "sha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "bytes": 8522
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "sha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "bytes": 3742
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/guard-plan.mjs",
+      "sha256": "2377f3f0bfd48fe8aa512e9fd513b62cb3cbf4cfc46ece931b8364cd06801fa2",
+      "bytes": 906
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/pins.mjs",
+      "sha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "bytes": 85
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "sha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "bytes": 823
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/scope.mjs",
+      "sha256": "0f7ae108619caf1ffda892b0a02a5a0ef7cd9df96bb8838ed065a3a70d185de9",
+      "bytes": 204
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "sha256": "a47925d5994daf834aaf3c15a26ee8c5b21cd8d9d6807f254011214165f8612e",
+      "bytes": 2279
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/guard-plan.mjs",
+      "sha256": "db27498d62612a368f545f6a83d1e9e627ff2052039ce7f5bf3424dee9d5124e",
+      "bytes": 1544
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/backup-digest.mjs",
+      "sha256": "02523930af9574ecfe29648f6865fa611c4391f9b9a633b8f3c638a287f1fc5d",
+      "bytes": 2291
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/profile-transfer.mjs",
+      "sha256": "5d101f080fc75b2ac7789c4b2de0a47db7e729b7d11596ef04fc272d7f2d8ceb",
+      "bytes": 5721
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/pwa-tools.mjs",
+      "sha256": "e8c956f0c1a7e92e5761c9ea7ad278b3b817e3454f6eb09ebeddbe42a763945b",
+      "bytes": 9787
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/review-guard.mjs",
+      "sha256": "5c0a872174b657d19da6a17ae021955985419201f66551a0ca236a709aeb844a",
+      "bytes": 1385
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/update-controller.mjs",
+      "sha256": "e919bb018f4a35504315101cd2c681551e6a0800b93c3959fb25b770101e5a51",
+      "bytes": 1819
+    },
+    {
+      "file": "src/browser/provider-content.mjs",
+      "sha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "bytes": 1581
+    },
+    {
+      "file": "src/browser/provider-error-copy.mjs",
+      "sha256": "cf468994d6ea962fc91940b6818e11f13dd873e4c4eec1ff443a5bf04d347b43",
+      "bytes": 2872
+    },
+    {
+      "file": "src/browser/storage.ts",
+      "sha256": "8b5f1f8d4ffe84270ca4d93c840e0e3e0626593c950c664f7f1a158b3186e990",
+      "bytes": 3301
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "sha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "bytes": 5425
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/contest/ledger.mjs",
+      "sha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "bytes": 2162
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/fleet-store.ts",
+      "sha256": "c527cd3f4aa686aae449bb5a3096deea1bc7e1e1ac679fc6132191ab3da2628b",
+      "bytes": 16827
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/report-utils.ts",
+      "sha256": "a0c1873aad7faa9630ed78dfe32f99c681dabafed9f01ea2410938cfeb0bd7ea",
+      "bytes": 4208
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/vehicle-presets.ts",
+      "sha256": "9e5cad84ad73d007595061ab876f6e8aa023598b06caf2b0e23652fd38377bff",
+      "bytes": 6302
+    },
+    {
+      "file": "src/browser/vendor/receipt-match.ts",
+      "sha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "bytes": 4095
+    }
+  ]
+}

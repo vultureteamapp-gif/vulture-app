@@ -1,0 +1,860 @@
+{
+  "scope": "Already-applied source extraction, not a new contract",
+  "protectedOriginalFiles": 914,
+  "originalPwaRelease": "a9d1b7b40c674b86db92685e4f2dba9430db63a7d914ff83c1884991bd8be134",
+  "requestSha256": "b719b7bedca24f00a4fd1ff780854907cd38602652ce747d89f94713fb81aec6",
+  "files": [
+    {
+      "file": "src/browser/app.ts",
+      "origin": "app.ts",
+      "originalSha256": "66d1a67c4c9fdb549b648a52dbcc2a39c490a2d9797416a8e472669f26de24c0",
+      "appliedSourceSha256": "96a4459a9a37312482d6a180834dab498660f77884e7d070567f6e05ce64d350",
+      "packagedSha256": "2c2e2585c1ea019dac6b3c1595b3390bed33bc238e59552cbcd723531f736165",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained",
+      "previousPackagedSha256": "66c114adffc96389c1712d202d17384781d89df9ff69cecf38a24c02e4bbd222",
+      "currentRevision": "Authorized local aggregate reviewer control/connection; frozen business contract untouched"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/pwa-tools.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/pwa-tools.mjs",
+      "originalSha256": "868ce4192e69078eb037ab697bd6ac21e13a2cf03b0246007566e19791bab743",
+      "appliedSourceSha256": "868ce4192e69078eb037ab697bd6ac21e13a2cf03b0246007566e19791bab743",
+      "packagedSha256": "e8c956f0c1a7e92e5761c9ea7ad278b3b817e3454f6eb09ebeddbe42a763945b",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/fixed-trial-loader.mjs",
+      "origin": "fixed-trial-loader.mjs",
+      "originalSha256": "f01792d0c1102a6ab2d049fd89e47a18bed32cc8a713d141f2b5207887fe96e7",
+      "appliedSourceSha256": "f01792d0c1102a6ab2d049fd89e47a18bed32cc8a713d141f2b5207887fe96e7",
+      "packagedSha256": "f01792d0c1102a6ab2d049fd89e47a18bed32cc8a713d141f2b5207887fe96e7",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/review-guard.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/review-guard.mjs",
+      "originalSha256": "5c0a872174b657d19da6a17ae021955985419201f66551a0ca236a709aeb844a",
+      "appliedSourceSha256": "5c0a872174b657d19da6a17ae021955985419201f66551a0ca236a709aeb844a",
+      "packagedSha256": "5c0a872174b657d19da6a17ae021955985419201f66551a0ca236a709aeb844a",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/core.mjs",
+      "origin": "core.mjs",
+      "originalSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "appliedSourceSha256": "4f3dcf5865214dca81ccdd5ca83fe176d4907326eb1519e24ca6ffa70233e379",
+      "packagedSha256": "1ac4638c228d63daef3a78d1ed650e0506bf629d2f5184af88c2715744baa5f9",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/copy-report.mjs",
+      "origin": "copy-report.mjs",
+      "originalSha256": "92adb598a681510bdc5aafde4455ef8f968acbfff8be81859b1750d211212f70",
+      "appliedSourceSha256": "92adb598a681510bdc5aafde4455ef8f968acbfff8be81859b1750d211212f70",
+      "packagedSha256": "92adb598a681510bdc5aafde4455ef8f968acbfff8be81859b1750d211212f70",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/provider-error-copy.mjs",
+      "origin": "provider-error-copy.mjs",
+      "originalSha256": "cf468994d6ea962fc91940b6818e11f13dd873e4c4eec1ff443a5bf04d347b43",
+      "appliedSourceSha256": "cf468994d6ea962fc91940b6818e11f13dd873e4c4eec1ff443a5bf04d347b43",
+      "packagedSha256": "cf468994d6ea962fc91940b6818e11f13dd873e4c4eec1ff443a5bf04d347b43",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "originalSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "appliedSourceSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "packagedSha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/scope.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/scope.mjs",
+      "originalSha256": "0f7ae108619caf1ffda892b0a02a5a0ef7cd9df96bb8838ed065a3a70d185de9",
+      "appliedSourceSha256": "0f7ae108619caf1ffda892b0a02a5a0ef7cd9df96bb8838ed065a3a70d185de9",
+      "packagedSha256": "0f7ae108619caf1ffda892b0a02a5a0ef7cd9df96bb8838ed065a3a70d185de9",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/pins.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/pins.mjs",
+      "originalSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "appliedSourceSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "packagedSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "originalSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "appliedSourceSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "packagedSha256": "a47925d5994daf834aaf3c15a26ee8c5b21cd8d9d6807f254011214165f8612e",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/storage.ts",
+      "origin": "storage.ts",
+      "originalSha256": "caae7b0c9630c80bbcdc5c2833b2e25a52a5162e9c263476ff67ec4f8d0da4f5",
+      "appliedSourceSha256": "3a131417c78b6724b77f51e16af20406a3d3baa917904cd462f7395bf14da51f",
+      "packagedSha256": "8b5f1f8d4ffe84270ca4d93c840e0e3e0626593c950c664f7f1a158b3186e990",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/model-contract.mjs",
+      "origin": "model-contract.mjs",
+      "originalSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "appliedSourceSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "packagedSha256": "39b712fd44767a1981226c923516179b8d1ae1ef5571a7b63d5a0afa19733988",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/profile-transfer.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/profile-transfer.mjs",
+      "originalSha256": "c1b0920f490756aa9243abcaedc7bbdcddd014e6296aaa5f1a6dac4365f77148",
+      "appliedSourceSha256": "aa6265fd0268da44681bea3745dcf7a84a553b8a1a8043dd86d4af46f6f7e608",
+      "packagedSha256": "5d101f080fc75b2ac7789c4b2de0a47db7e729b7d11596ef04fc272d7f2d8ceb",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/backup-digest.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/backup-digest.mjs",
+      "originalSha256": "02523930af9574ecfe29648f6865fa611c4391f9b9a633b8f3c638a287f1fc5d",
+      "appliedSourceSha256": "02523930af9574ecfe29648f6865fa611c4391f9b9a633b8f3c638a287f1fc5d",
+      "packagedSha256": "02523930af9574ecfe29648f6865fa611c4391f9b9a633b8f3c638a287f1fc5d",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/update-controller.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/ux-pwa/update-controller.mjs",
+      "originalSha256": "f3e13379cefee7439fc32261f4d7201f0b3ff77beae33949ec07655b78a1b698",
+      "appliedSourceSha256": "f3e13379cefee7439fc32261f4d7201f0b3ff77beae33949ec07655b78a1b698",
+      "packagedSha256": "e919bb018f4a35504315101cd2c681551e6a0800b93c3959fb25b770101e5a51",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "originalSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "appliedSourceSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "packagedSha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/provider-content.mjs",
+      "origin": "provider-content.mjs",
+      "originalSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "appliedSourceSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "packagedSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/report-utils.ts",
+      "origin": "vendor/base/workspace/src/lib/report-utils.ts",
+      "originalSha256": "3558eebfd77134a28b123b59950f03eb24d19abf5afc11ed6fa35f688ac76c0b",
+      "appliedSourceSha256": "3558eebfd77134a28b123b59950f03eb24d19abf5afc11ed6fa35f688ac76c0b",
+      "packagedSha256": "a0c1873aad7faa9630ed78dfe32f99c681dabafed9f01ea2410938cfeb0bd7ea",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/fleet-store.ts",
+      "origin": "vendor/base/workspace/src/lib/fleet-store.ts",
+      "originalSha256": "46622e6d7ff6807e75c9e232e7a256a9ba53ab6322b8422a2b99c2552b180f21",
+      "appliedSourceSha256": "370bb1a5deca07a78f55cc66e919eb8a45fd7d1db4b033f175d6adf8e740e4c5",
+      "packagedSha256": "c527cd3f4aa686aae449bb5a3096deea1bc7e1e1ac679fc6132191ab3da2628b",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/contest/ledger.mjs",
+      "origin": "vendor/base/workspace/src/contest/ledger.mjs",
+      "originalSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "appliedSourceSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "packagedSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/payment-inbox.mjs",
+      "origin": "payment-inbox.mjs",
+      "originalSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "appliedSourceSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "packagedSha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/execution-connection/guard-plan.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/guard-plan.mjs",
+      "originalSha256": "742602843515ad2c736d56a1561affac1e8ec680c16cccae6007f3e669e3f3d1",
+      "appliedSourceSha256": "742602843515ad2c736d56a1561affac1e8ec680c16cccae6007f3e669e3f3d1",
+      "packagedSha256": "2377f3f0bfd48fe8aa512e9fd513b62cb3cbf4cfc46ece931b8364cd06801fa2",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "origin": "vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "originalSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "appliedSourceSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "packagedSha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "originalSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "appliedSourceSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "packagedSha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/base/workspace/src/lib/vehicle-presets.ts",
+      "origin": "vendor/base/workspace/src/lib/vehicle-presets.ts",
+      "originalSha256": "9e5cad84ad73d007595061ab876f6e8aa023598b06caf2b0e23652fd38377bff",
+      "appliedSourceSha256": "9e5cad84ad73d007595061ab876f6e8aa023598b06caf2b0e23652fd38377bff",
+      "packagedSha256": "9e5cad84ad73d007595061ab876f6e8aa023598b06caf2b0e23652fd38377bff",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/profiles/payment-003/phrase-evidence-006/guard-plan.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/guard-plan.mjs",
+      "originalSha256": "6ca86dab6071153b4879d26c6d45c62a50c327164f1472b3c107bb3092b045b6",
+      "appliedSourceSha256": "6ca86dab6071153b4879d26c6d45c62a50c327164f1472b3c107bb3092b045b6",
+      "packagedSha256": "db27498d62612a368f545f6a83d1e9e627ff2052039ce7f5bf3424dee9d5124e",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/browser/vendor/receipt-match.ts",
+      "origin": "vendor/receipt-match.ts",
+      "originalSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "appliedSourceSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "packagedSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/server.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/server.mjs",
+      "originalSha256": "009314ac69e3c25695c68e50c235462dbe5c35317cb196468379fae9446ce7c2",
+      "appliedSourceSha256": "1762da0e7f19aeae1b0ea34685fb3be70c98db9518d58ad430ee54127304416b",
+      "packagedSha256": "73ea3f0a9296eba3bd58c5931297eb10c00415fdf6dc945deea80f5ddf168a61",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained",
+      "previousPackagedSha256": "0ac0c547e9cf7548975a14ab62eb778bb014d6961c994fde47a65eed67ef1e3e",
+      "currentRevision": "Authorized aggregate reviewer control/history connection; business contract unchanged",
+      "previousConnectionRevisionSha256": "c628c3e4f9fd77594c011a20401159382da6bff917dd6af0a57283edee636012"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/provision.mjs",
+      "origin": "profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/provision.mjs",
+      "originalSha256": "9b533f8ea763aa6ff62fa92a522c210144dc1ced679e027c4023031e70230cf2",
+      "appliedSourceSha256": "8cd795bb6addaa34b34dacd8966e1e0b44cd8e54817d9b727b12e9fe2a146d4d",
+      "packagedSha256": "3021bcf57a12950a7f6ebeff86b2f9739e7c88d2d8336704c9cb18d2cd67eded",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/pwa-https-006/state.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/pwa-https-006/state.mjs",
+      "originalSha256": "ab90e16544873f7de68b7aa61e1acdd4289cebaa22ea33fc8342bc50782e00a2",
+      "appliedSourceSha256": "ab90e16544873f7de68b7aa61e1acdd4289cebaa22ea33fc8342bc50782e00a2",
+      "packagedSha256": "6dd51597fa95b49a6b9ca6b6be38e57bdc2629f56cdfc886fd6a85adcd10f59f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained",
+      "previousPackagedSha256": "55fdc6c4f285d6a3b9fd00e6b6d13601dc65236fd63f6ff7b4e9b556f87c25cd",
+      "currentRevision": "Authorized local aggregate reviewer control/connection; frozen business contract untouched"
+    },
+    {
+      "file": "src/hosted/vendor/base/server/persistent-guard.mjs",
+      "origin": "vendor/base/server/persistent-guard.mjs",
+      "originalSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "appliedSourceSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "packagedSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/pwa-https-006/runtime.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/pwa-https-006/runtime.mjs",
+      "originalSha256": "ae19a8118ed745111a96486723434dfe984637977fc3b0e6f7a989831a2b0eb4",
+      "appliedSourceSha256": "ae19a8118ed745111a96486723434dfe984637977fc3b0e6f7a989831a2b0eb4",
+      "packagedSha256": "143362eee7d4c11bed24b10d00f5f41d50785e08cac0a01d0d441476ed428172",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained",
+      "previousPackagedSha256": "7e3fd3065cceea3552ff71e2a3dbc953bd7f49741cc70db0cc651968bd0c5dc2",
+      "currentRevision": "Authorized aggregate reviewer control/history connection; business contract unchanged",
+      "previousConnectionRevisionSha256": "edef323273949b1a14f3385130cca22db3e0f9fe9429c04912bc41d949577a56"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/pwa-https-006/service.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/pwa-https-006/service.mjs",
+      "originalSha256": "60b062ae86a396c3c57bbd91d2e25979b78c467cc2d17743664ccdd8b6224f30",
+      "appliedSourceSha256": "60b062ae86a396c3c57bbd91d2e25979b78c467cc2d17743664ccdd8b6224f30",
+      "packagedSha256": "533f2e9e13273899bc3ba7402e7ea9d8f79be8241e88504d10e516b143aa9259",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained",
+      "previousPackagedSha256": "39b77cb772ffbb265413da3a163598e690b374b750e1a19a70cbe797ab384cdb",
+      "currentRevision": "Authorized local aggregate reviewer control/connection; frozen business contract untouched"
+    },
+    {
+      "file": "src/hosted/vendor/base/server/judge.mjs",
+      "origin": "vendor/base/server/judge.mjs",
+      "originalSha256": "f25d1e5ffd743e75ee9ed1de45f66aa820d979ef6802d6ad2f3934aa502d2bf5",
+      "appliedSourceSha256": "f25d1e5ffd743e75ee9ed1de45f66aa820d979ef6802d6ad2f3934aa502d2bf5",
+      "packagedSha256": "3f79126208f694deb80d44dcfaec825b095f7f5dcbf03626a10d2fe6923272f4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "originalSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "appliedSourceSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "packagedSha256": "a47925d5994daf834aaf3c15a26ee8c5b21cd8d9d6807f254011214165f8612e",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "originalSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "appliedSourceSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "packagedSha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/base/server/journal.mjs",
+      "origin": "vendor/base/server/journal.mjs",
+      "originalSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "appliedSourceSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "packagedSha256": "c07fe62ff34582314a581166737bc3bbdf82510bde359b26c4b37c9cb9049bc9",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/core.mjs",
+      "origin": "core.mjs",
+      "originalSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "appliedSourceSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "packagedSha256": "6578894d88d063a6eccd9729740502ef8009eb9929b9b4bd5019ab7998823677",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "originalSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "appliedSourceSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "packagedSha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/execution-connection/offline-double.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/offline-double.mjs",
+      "originalSha256": "cdbdac3ddb853f0712a77111f35d6790857132a6fef9005ff7c609d31c1de332",
+      "appliedSourceSha256": "cdbdac3ddb853f0712a77111f35d6790857132a6fef9005ff7c609d31c1de332",
+      "packagedSha256": "b18e11aba6685787bcc9932610408ef9e72db2bfba487a2e55e92e1b401f0d0d",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/provider-content.mjs",
+      "origin": "provider-content.mjs",
+      "originalSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "appliedSourceSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "packagedSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/base/server/agent.mjs",
+      "origin": "vendor/base/server/agent.mjs",
+      "originalSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "appliedSourceSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "packagedSha256": "551f9e0e59788887345b66c2a715c85fb7fe9b00d371149e68cdbe3d46a6e8f3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/fixtures.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/fixtures.mjs",
+      "originalSha256": "2164333f40a9b9d11e596158d880c5fceb85eb0612378158d9ddfff2bdc6f1d0",
+      "appliedSourceSha256": "2164333f40a9b9d11e596158d880c5fceb85eb0612378158d9ddfff2bdc6f1d0",
+      "packagedSha256": "89ad0e1161b6cdee55bfa9f7c6565ac36ae184f15db145d67c187f71592da51c",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "originalSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "appliedSourceSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "packagedSha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/payment-inbox.mjs",
+      "origin": "payment-inbox.mjs",
+      "originalSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "appliedSourceSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "packagedSha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/base/workspace/src/contest/ledger.mjs",
+      "origin": "vendor/base/workspace/src/contest/ledger.mjs",
+      "originalSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "appliedSourceSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "packagedSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "origin": "vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "originalSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "appliedSourceSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "packagedSha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/base/server/korean-policy.mjs",
+      "origin": "vendor/base/server/korean-policy.mjs",
+      "originalSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "appliedSourceSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "packagedSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/hosted/vendor/receipt-match.ts",
+      "origin": "vendor/receipt-match.ts",
+      "originalSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "appliedSourceSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "packagedSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/runtime/trial-final-json-002.mjs",
+      "origin": "runtime/trial-final-json-002.mjs",
+      "originalSha256": "af886975cfbde4a3a50c7c998152b2540e1b885e99e7fd796408dadda5b3e2e9",
+      "appliedSourceSha256": "d78f999923182874b7d337c5c3c99a0e737fe905d09dab00b7a1b3dd72129dee",
+      "packagedSha256": "a7919160deb6736011a7d695cfaad2e69f76a0616d76b6985d015a6e3780a5d5",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/provider-adapter.mjs",
+      "origin": "provider-adapter.mjs",
+      "originalSha256": "a3de119809e50c353f62edcb6aaddf97621fc55cad9b77c0eb99f74d5e602f22",
+      "appliedSourceSha256": "101782986435bc4ea79446d2e20d894023bb4befc792bcb9b17dec939249ec98",
+      "packagedSha256": "e78897df243541f4de497b6569dfbda7d7c142c2a51b5176fe4e0790702f1e1f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/server/journal.mjs",
+      "origin": "vendor/base/server/journal.mjs",
+      "originalSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "appliedSourceSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "packagedSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/model-contract.mjs",
+      "origin": "model-contract.mjs",
+      "originalSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "appliedSourceSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "packagedSha256": "39b712fd44767a1981226c923516179b8d1ae1ef5571a7b63d5a0afa19733988",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "originalSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "appliedSourceSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "packagedSha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/server/persistent-guard.mjs",
+      "origin": "vendor/base/server/persistent-guard.mjs",
+      "originalSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "appliedSourceSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "packagedSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/core.mjs",
+      "origin": "core.mjs",
+      "originalSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "appliedSourceSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "packagedSha256": "6578894d88d063a6eccd9729740502ef8009eb9929b9b4bd5019ab7998823677",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/provider-content.mjs",
+      "origin": "provider-content.mjs",
+      "originalSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "appliedSourceSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "packagedSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/server/agent.mjs",
+      "origin": "vendor/base/server/agent.mjs",
+      "originalSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "appliedSourceSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "packagedSha256": "551f9e0e59788887345b66c2a715c85fb7fe9b00d371149e68cdbe3d46a6e8f3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "originalSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "appliedSourceSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "packagedSha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "origin": "vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "originalSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "appliedSourceSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "packagedSha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/server/korean-policy.mjs",
+      "origin": "vendor/base/server/korean-policy.mjs",
+      "originalSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "appliedSourceSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "packagedSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "originalSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "appliedSourceSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "packagedSha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/payment-inbox.mjs",
+      "origin": "payment-inbox.mjs",
+      "originalSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "appliedSourceSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "packagedSha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/base/workspace/src/contest/ledger.mjs",
+      "origin": "vendor/base/workspace/src/contest/ledger.mjs",
+      "originalSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "appliedSourceSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "packagedSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/controller/vendor/receipt-match.ts",
+      "origin": "vendor/receipt-match.ts",
+      "originalSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "appliedSourceSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "packagedSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/profiles/payment-003/service.mjs",
+      "origin": "profiles/payment-003/service.mjs",
+      "originalSha256": "3daf500ba36ec9075745bcc7d7fcceed39cca93f9bbc89da0e866eeb0898f292",
+      "appliedSourceSha256": "6d0d22c8d1873ee76d21e520e1df60a43435eca1018bce3e9d921e9f37e7b1c9",
+      "packagedSha256": "326a5019ac064aaf298b61a4b68ea0ff2236bc077ca25b9b9bf1a5505e2f6ecd",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/runtime/document-service.mjs",
+      "origin": "runtime/document-service.mjs",
+      "originalSha256": "f0ced9677c4d6f32548f286a93108819f40c4d466851786d9a7cb6e382b741e2",
+      "appliedSourceSha256": "86b3fad34be1bab21ce193831424bea1fd2be0a8c9393092aaebdeceb0a81182",
+      "packagedSha256": "afa58b9e9c7e4641c80b52712b0d540eabae89986f6346b2e8a361ff1694a819",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/runtime/trial-final-json-002.mjs",
+      "origin": "runtime/trial-final-json-002.mjs",
+      "originalSha256": "af886975cfbde4a3a50c7c998152b2540e1b885e99e7fd796408dadda5b3e2e9",
+      "appliedSourceSha256": "502edc023f087d6acd4a83b226a06c89570c95da64311cec6d1937bfbc954775",
+      "packagedSha256": "ef652d0fdc5865fea7445e162baa2b2200630279d8faf6341be2da8c3cb8f42f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "originalSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "appliedSourceSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "packagedSha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/server/persistent-guard.mjs",
+      "origin": "vendor/base/server/persistent-guard.mjs",
+      "originalSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "appliedSourceSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "packagedSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/runtime/trial.mjs",
+      "origin": "runtime/trial.mjs",
+      "originalSha256": "127bb620500afed8207f25432c3d5c1b6423cf80f31cd3cd1f2f1bbda76942ae",
+      "appliedSourceSha256": "127bb620500afed8207f25432c3d5c1b6423cf80f31cd3cd1f2f1bbda76942ae",
+      "packagedSha256": "4bbddac1123d8f159ba34b9a6f54b1fd25d125c8f5462f523e93e3a84a1c9c56",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/server/journal.mjs",
+      "origin": "vendor/base/server/journal.mjs",
+      "originalSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "appliedSourceSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "packagedSha256": "f2a33b5244cc22970f57f14e6abefefc5a266edb60365b012d158f5be9a74fae",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/model-contract.mjs",
+      "origin": "model-contract.mjs",
+      "originalSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "appliedSourceSha256": "ee250d038c82da653e3e91a1feeb0c30a2cdabf329497dc628674d0fd02f416b",
+      "packagedSha256": "39b712fd44767a1981226c923516179b8d1ae1ef5571a7b63d5a0afa19733988",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/provider-adapter.mjs",
+      "origin": "provider-adapter.mjs",
+      "originalSha256": "a3de119809e50c353f62edcb6aaddf97621fc55cad9b77c0eb99f74d5e602f22",
+      "appliedSourceSha256": "101782986435bc4ea79446d2e20d894023bb4befc792bcb9b17dec939249ec98",
+      "packagedSha256": "e78897df243541f4de497b6569dfbda7d7c142c2a51b5176fe4e0790702f1e1f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "originalSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "appliedSourceSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "packagedSha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/core.mjs",
+      "origin": "core.mjs",
+      "originalSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "appliedSourceSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "packagedSha256": "6578894d88d063a6eccd9729740502ef8009eb9929b9b4bd5019ab7998823677",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/provider-content.mjs",
+      "origin": "provider-content.mjs",
+      "originalSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "appliedSourceSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "packagedSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/server/agent.mjs",
+      "origin": "vendor/base/server/agent.mjs",
+      "originalSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "appliedSourceSha256": "39e4b4cf84ae28f86a29e5931bd4caf114628f35fde77f8c837d7321bd525ac1",
+      "packagedSha256": "551f9e0e59788887345b66c2a715c85fb7fe9b00d371149e68cdbe3d46a6e8f3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "originalSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "appliedSourceSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "packagedSha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "origin": "vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "originalSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "appliedSourceSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "packagedSha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/server/korean-policy.mjs",
+      "origin": "vendor/base/server/korean-policy.mjs",
+      "originalSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "appliedSourceSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "packagedSha256": "6956ef8e5a3f29ab2f8f3a70ff261baae3a81a7e37fdbe935c2f5748d3e87570",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/base/workspace/src/contest/ledger.mjs",
+      "origin": "vendor/base/workspace/src/contest/ledger.mjs",
+      "originalSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "appliedSourceSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "packagedSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/payment-inbox.mjs",
+      "origin": "payment-inbox.mjs",
+      "originalSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "appliedSourceSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "packagedSha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/service/vendor/receipt-match.ts",
+      "origin": "vendor/receipt-match.ts",
+      "originalSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "appliedSourceSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "packagedSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/execute-once.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/execute-once.mjs",
+      "originalSha256": "ad902fa62dcfd34f34df8bc42e7503f4188b702944f0152f8be5c8080a9e9e0e",
+      "appliedSourceSha256": "ad902fa62dcfd34f34df8bc42e7503f4188b702944f0152f8be5c8080a9e9e0e",
+      "packagedSha256": "95cc38b08ec6050fe103f9b2e73b88f1cf2106f14b4fbed65ec4b85951bfc67f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/server.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/server.mjs",
+      "originalSha256": "9b998f4c26f08e079093e5d5a75123a8a64a1772aa3f08884a0b9eb888e012dd",
+      "appliedSourceSha256": "9b998f4c26f08e079093e5d5a75123a8a64a1772aa3f08884a0b9eb888e012dd",
+      "packagedSha256": "54ea716d0094919459d4d98d860244aa65b0408c3044d094faf672d373e58561",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/preflight.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/preflight.mjs",
+      "originalSha256": "f9abe68cffa9bfd8f6f4a8a518c769acca597c2257b2104aba61c4299023e116",
+      "appliedSourceSha256": "f9abe68cffa9bfd8f6f4a8a518c769acca597c2257b2104aba61c4299023e116",
+      "packagedSha256": "5aa45e2b5d94ab686dd88efd473d2fa00d643020aea615ac2df7ea84374f6723",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/offline-double.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/offline-double.mjs",
+      "originalSha256": "cdbdac3ddb853f0712a77111f35d6790857132a6fef9005ff7c609d31c1de332",
+      "appliedSourceSha256": "cdbdac3ddb853f0712a77111f35d6790857132a6fef9005ff7c609d31c1de332",
+      "packagedSha256": "b18e11aba6685787bcc9932610408ef9e72db2bfba487a2e55e92e1b401f0d0d",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/control.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/control.mjs",
+      "originalSha256": "fd224f0527aab7d4abff84c7d68da49f46ec283e2447d94e26b1136a2496ebec",
+      "appliedSourceSha256": "fd224f0527aab7d4abff84c7d68da49f46ec283e2447d94e26b1136a2496ebec",
+      "packagedSha256": "dea48f22c73b67fcc257c27866d7722cc96f71e64dd2b1b3e2556c9675393d6d",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/binding.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/binding.mjs",
+      "originalSha256": "2e78b8820251758197ca48e0cad635e08db2da6cd95855cd5fd1d0945b6c3c18",
+      "appliedSourceSha256": "2e78b8820251758197ca48e0cad635e08db2da6cd95855cd5fd1d0945b6c3c18",
+      "packagedSha256": "51f54a5e55d45bff57ad35f28aeef2f06b963611997bb437e15bde5fd4d97e19",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/workflow.mjs",
+      "originalSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "appliedSourceSha256": "ebfca920535de990d367ee0b951561d5c5dcd05e1dd00da73d37072c2cb6e8b1",
+      "packagedSha256": "a47925d5994daf834aaf3c15a26ee8c5b21cd8d9d6807f254011214165f8612e",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/vendor/base/server/persistent-guard.mjs",
+      "origin": "vendor/base/server/persistent-guard.mjs",
+      "originalSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "appliedSourceSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "packagedSha256": "9072c0785679e01c8c4543234647154497975fb1a3dbae7aedf6a82a583db420",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/pins.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/pins.mjs",
+      "originalSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "appliedSourceSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "packagedSha256": "64bf73410b25ccb6b6d17e7999bcc5adbf9eb7e40ca52a8bd2e9d2876fe087f6",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/request.mjs",
+      "originalSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "appliedSourceSha256": "bebf5cacfe14f4a1a2aacc665fb111e62336505b308ce46f6779b291f43bb25b",
+      "packagedSha256": "4d46d92d7f0599e45d7cf3becd6180fcfaf170d9f86f32bd2f12e43d0d846ba3",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/execution-connection/service.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/execution-connection/service.mjs",
+      "originalSha256": "7770a013a2ccf747c367115db5c4b2e506062d0dea09d954ba00796efefbfdc3",
+      "appliedSourceSha256": "7770a013a2ccf747c367115db5c4b2e506062d0dea09d954ba00796efefbfdc3",
+      "packagedSha256": "06b99b308f5b6b8fd70330239ce5c992bfbb86360154b6f2183be79923a6cf66",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/fixtures.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/fixtures.mjs",
+      "originalSha256": "2164333f40a9b9d11e596158d880c5fceb85eb0612378158d9ddfff2bdc6f1d0",
+      "appliedSourceSha256": "2164333f40a9b9d11e596158d880c5fceb85eb0612378158d9ddfff2bdc6f1d0",
+      "packagedSha256": "89ad0e1161b6cdee55bfa9f7c6565ac36ae184f15db145d67c187f71592da51c",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/core.mjs",
+      "origin": "core.mjs",
+      "originalSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "appliedSourceSha256": "3f0d9c1e53abc0c27e1c562310f8b6d7160507f50e0d281b32ee58ed5e997f4a",
+      "packagedSha256": "6578894d88d063a6eccd9729740502ef8009eb9929b9b4bd5019ab7998823677",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/provider-content.mjs",
+      "origin": "provider-content.mjs",
+      "originalSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "appliedSourceSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "packagedSha256": "afe3ae6e34ea03961a0559ee52727dbe48e5437445847fd33f2012c239d266b4",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/contract.mjs",
+      "originalSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "appliedSourceSha256": "d80d859952603efa7f42d21815c211602659915e54aab67838cf458e43df1794",
+      "packagedSha256": "0cc7ec1d628ff6541774deeef04da7b672f3c12f04cebf66003d5e8881b0f8dc",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "origin": "profiles/payment-003/phrase-evidence-006/evidence.mjs",
+      "originalSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "appliedSourceSha256": "b4835497fec8578bd7ee0f914d3d9db92d8b8e8f83f012e8833899d5f6aeba93",
+      "packagedSha256": "d47f521e7d8db68d44df56678d451eea3c6b5484083b089581a17dadd9b2f414",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/payment-inbox.mjs",
+      "origin": "payment-inbox.mjs",
+      "originalSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "appliedSourceSha256": "053404bdb6d60e3282784092fab37aa070a68d9a3ec00ed54dbccce78f273dd1",
+      "packagedSha256": "2fdf6640d24df917c25050e4d38208cd35580f136c7c50c84f5fdb330be62529",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "origin": "vendor/base/workspace/src/contest/analysis-contract.mjs",
+      "originalSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "appliedSourceSha256": "d688f37056c019f8da666e782b413a73fe1aca1760792b370fdbf159224d2d73",
+      "packagedSha256": "c2be6de859568e48ac184328615f21b98087eab51a4cf9ef8bc882aab00717d8",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/vendor/base/workspace/src/contest/ledger.mjs",
+      "origin": "vendor/base/workspace/src/contest/ledger.mjs",
+      "originalSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "appliedSourceSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "packagedSha256": "fa5d951c8403df56f8058d7720359ae9c1fdec6f61b574d72fefc40e568ae06f",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    },
+    {
+      "file": "src/live/vendor/receipt-match.ts",
+      "origin": "vendor/receipt-match.ts",
+      "originalSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "appliedSourceSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "packagedSha256": "56d3b358c7c05917792e1ad8f485c59d3a65d4f17a2775672f791be954ed3248",
+      "transform": "Existing approved overlays; portable relative import paths; existing PWA backup scope and UI live-disable retained"
+    }
+  ]
+}

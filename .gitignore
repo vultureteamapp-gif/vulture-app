@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+*.log
+approval.USER.json
+live-state/
+service-state/
+*spent.lock
+*dispatch-intent.lock
+key-server-ready.json

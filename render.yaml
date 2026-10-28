@@ -1,0 +1,29 @@
+# PROPOSAL ONLY. Creating/applying this incurs charges and deploys externally.
+# Repository root must be the extracted selected SOURCE archive, not the old workspace.
+services:
+  - type: web
+    name: vulture-phrase-006-source-review
+    repo: https://github.com/vultureteamapp-gif/vulture-app
+    branch: main
+    runtime: node
+    plan: 0.5c-512mb
+    region: oregon
+    numInstances: 1
+    maxShutdownDelaySeconds: 60
+    buildCommand: npm ci --ignore-scripts --no-audit --no-fund && npm run build
+    startCommand: node dist/provision.mjs --maintenance
+    autoDeployTrigger: 'off'
+    healthCheckPath: /health
+    disk:
+      name: vulture-phrase-006-review-state
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_VERSION
+        value: 24.21.0
+      - key: VULTURE_PUBLIC_ORIGIN
+        sync: false
+      - key: VULTURE_ACCESS_SECRET
+        sync: false
+      - key: VULTURE_ENABLE_LIVE
+        value: 'off'

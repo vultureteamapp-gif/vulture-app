@@ -1,0 +1,32 @@
+{
+  "createdClientDateKST": "2026-10-28",
+  "origin": "New deterministic receipt/check geometry authored for Vulture at user request; no old image pixels, external assets, fonts, or libraries",
+  "generator": "tools/generate-icons.mjs",
+  "thirdPartyImageInputs": [],
+  "oldUnknownIconsIncluded": false,
+  "licenseApplied": false,
+  "proposedLicense": "MIT, pending user ownership/copyright confirmation",
+  "icons": [
+    {
+      "file": "icon-192.80e3089a6714a923.png",
+      "sha256": "80e3089a6714a923c2a213bbcee1956799e33b6caedac7bcd1ffc2b6c87ba054",
+      "bytes": 848,
+      "size": 192,
+      "purpose": "any"
+    },
+    {
+      "file": "icon-512.4c5139cf023ee28e.png",
+      "sha256": "4c5139cf023ee28efffc2f4946e58cf97096e5f7546b0be922e9ba7068c92c02",
+      "bytes": 3559,
+      "size": 512,
+      "purpose": "any"
+    },
+    {
+      "file": "icon-maskable-512.4cdb752dd32d4616.png",
+      "sha256": "4cdb752dd32d4616fa840bec923ffb29e389eabab9a6dd8b630cefc2a512d954",
+      "bytes": 3289,
+      "size": 512,
+      "purpose": "maskable"
+    }
+  ]
+}

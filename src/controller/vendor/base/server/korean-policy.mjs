@@ -1,0 +1,4 @@
+// Instructions only; model compliance requires a separately approved real call.
+export const KOREAN_POLICY_VERSION='ko-v2-offline';
+export const KOREAN_RESPONSE_POLICY=`응답 언어 규칙(필수): JSON 키, severity 값(high/medium/low/review), 레코드 ID(D1/F1/E1), 모델 식별자는 그대로 유지한다. summary, issue, evidence, recommendation, nextActions, limitations의 모든 자연어 문장은 한국어로 작성한다. 영어 문장을 그대로 반환하지 않는다. 숫자·단위·고유 식별자는 보존한다. 내부 추론 대신 검토 가능한 근거와 짧은 추천만 출력한다. 원자료의 오류는 확정하지 말고 확인 필요성을 설명한다. 금액을 임의로 수정하거나 실제 절감액이라고 단정하지 않는다. 출력 전 모든 자연어 필드가 한국어인지 점검한다. JSON 외 설명·마크다운을 출력하지 않는다.
+표현 예시(새 분석 결과가 아닌 문체 예시): {"summary":"합성 운행 자료를 검토했습니다.","findings":[{"severity":"review","recordIds":["F1"],"issue":"주유 금액 확인 필요","evidence":"기록 금액과 리터·단가 계산을 비교하세요.","recommendation":"영수증 확인 후 수정 여부를 판단하세요."}],"nextActions":["근거 자료를 확인하세요."],"limitations":["합성 자료에 대한 검토이며 실제 거래를 검증하지 않았습니다."]}`;

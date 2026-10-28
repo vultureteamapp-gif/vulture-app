@@ -1,0 +1,10 @@
+{
+  "browser": "./src/browser/app.ts",
+  "hosted": "./src/hosted/profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/server.mjs",
+  "provision": "./src/hosted/profiles/payment-003/quote-contract-004/connection/mobile-session-001/hosted/provision.mjs",
+  "state": "./src/hosted/profiles/payment-003/phrase-evidence-006/pwa-https-006/state.mjs",
+  "liveServer": "./src/live/profiles/payment-003/phrase-evidence-006/execution-connection/server.mjs",
+  "liveControl": "./src/live/profiles/payment-003/phrase-evidence-006/execution-connection/control.mjs",
+  "livePreflight": "./src/live/profiles/payment-003/phrase-evidence-006/execution-connection/preflight.mjs",
+  "liveExecute": "./src/live/profiles/payment-003/phrase-evidence-006/execution-connection/execute-once.mjs"
+}

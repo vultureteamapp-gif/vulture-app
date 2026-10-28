@@ -1,0 +1,32 @@
+{
+  "id": "/inbox",
+  "name": "Vulture Inbox",
+  "short_name": "Vulture",
+  "description": "Review synthetic load messages and fuel evidence, confirm records and prepare a daily report.",
+  "lang": "en",
+  "start_url": "/inbox?channel=real&launch=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f2f6f5",
+  "theme_color": "#12675e",
+  "icons": [
+    {
+      "src": "/pwa-assets/icon-192.80e3089a6714a923.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-assets/icon-512.4c5139cf023ee28e.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-assets/icon-maskable-512.4cdb752dd32d4616.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
